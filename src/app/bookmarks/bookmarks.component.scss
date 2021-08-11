@@ -1,0 +1,37 @@
+
+.hi {
+  margin-top: 2rem;
+  display:inline-table;
+  
+}
+
+
+nb-card {
+ height:500px;
+ width:500px;
+ margin-right:80px;
+ margin-left:100px;
+  nb-card-header {
+    .movie-title {
+
+      margin-right: 5px;
+    }
+  }
+
+  nb-card-body {
+    padding: 0px;
+
+    img {
+      height: 380px;
+      width: 495px;
+    }
+  }
+
+  nb-card-footer {
+    .movie-details {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

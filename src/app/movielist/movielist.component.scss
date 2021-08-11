@@ -1,0 +1,54 @@
+input{
+	width: 80%;
+	margin-top:20px;
+  padding: 8px 20px;  
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+}
+
+.hi {
+  margin-top: 2rem;
+  display:inline-table;
+  
+}
+.but{
+	background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 2px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+nb-card {
+ height:500px;
+ width:500px;
+ margin-right:80px;
+ margin-left:100px;
+  nb-card-header {
+    .movie-title {
+
+      margin-right: 5px;
+    }
+  }
+
+  nb-card-body {
+    padding: 0px;
+
+    img {
+      height: 380px;
+      width: 495px;
+    }
+  }
+
+  nb-card-footer {
+    .movie-details {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

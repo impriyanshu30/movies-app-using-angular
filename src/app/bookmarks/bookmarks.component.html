@@ -1,0 +1,30 @@
+<!-- <p>bookmarks works!</p> -->
+
+<div class="hi" *ngFor="let item of bookmarkedMovies">
+      
+      <nb-card status="primary">
+  <nb-card-header>
+    <div>
+      <span class="movie-title">{{item.Title}} : {{item.Type}}</span>
+      <!-- <nb-tag size="tiny" status="basic" text="{{item.Type}}"></nb-tag> -->
+    </div>
+  </nb-card-header>
+  <nb-card-body>
+    <img src={{item.Poster}} >
+  </nb-card-body>
+  <nb-card-footer>
+    <div>
+      <!-- <p>{{movie.Plot}}</p> -->
+      <div class="movie-details">
+        <div class="movie-rating">
+         
+          <span>Imdb Rating :{{item.imdbRating}}</span>
+    	</div>
+    </div>
+</div>
+  </nb-card-footer>
+</nb-card>
+
+
+</div>
+

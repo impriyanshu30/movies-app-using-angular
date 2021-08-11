@@ -1,0 +1,42 @@
+
+  <form (ngSubmit)="onSubmit()">
+    <nb-form-field>
+      <label>
+        <input [(ngModel)]="searchStr" fullWidth name="Search" nbInput placeholder="Click here to search and press enter" type="text"/>
+      </label>
+    </nb-form-field>
+  </form>
+
+
+  
+ <div class="hi" *ngFor="let item of searchMovies">
+ 
+      <nb-card status="primary">
+  <nb-card-header>
+    <div>
+      <span class="movie-title">{{item.Title}} : {{item.Type}}</span>
+      <!-- <nb-tag size="tiny" status="basic" text="{{item.Type}}"></nb-tag> -->
+    </div>
+  </nb-card-header>
+  <nb-card-body>
+    <img src={{item.Poster}} >
+  </nb-card-body>
+  <nb-card-footer>
+    <div>
+      <div class="movie-details">
+        <div class="movie-rating">
+         
+          <span>Imdb Rating :{{item.imdbRating}}</span>
+    	</div>
+ 
+          <button (click)="onBookmark(item)" class="but">click here to bookmark movie</button>
+    </div>
+</div>
+  </nb-card-footer>
+</nb-card>
+
+
+</div>
+
+<app-bookmarks [bookmarkedMovies]="bookmarkedMovies"></app-bookmarks>
+  
